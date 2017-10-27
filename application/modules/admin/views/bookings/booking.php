@@ -86,7 +86,7 @@ if($booking->status==2){
 				  <div class="row">
 					<div class="col-xs-12">
 					  <h2 class="page-header">
-						<img src="<?php echo base_url('assets/admin/uploads/images/'.$this->setting->logo) ?>" height="35" width="60" /></i> <?php echo $this->setting->name?>
+						<img src="<?php echo base_url('assets/admin/uploads/images/'.$this->setting->logo) ?>" height="135" width="160" /></i> <?php echo $this->setting->name?>
 						<small class="pull-right"><?php echo lang('booking_date')?>: <?php echo date_time_convert($booking->ordered_on);?></small>
 					  </h2>
 					</div><!-- /.col -->
@@ -125,7 +125,7 @@ if($booking->status==2){
 									<td ><?php echo $booking->order_no?></td>
 								</tr>
 								<tr>
-									<th><b><?php echo lang('check_in')?> </b></th>
+									<th><b>TESTTTTT<?php echo lang('check_in')?> </b></th>
 									<th>:</th>
 									<td ><?php echo date_convert($booking->check_in);?></td>
 								</tr>
@@ -182,7 +182,7 @@ if($booking->status==2){
 						<?php $i=1;foreach($prices as $new){?>
 							<tr>
 								<td><?php echo $i?>.</td>
-								<td><?php echo date_convert($new->date)?></td>
+								<td>einaiok<?php echo date_convert($new->date)?></td>
 								<td align="right"><?php echo $booking->cs?>  <?php echo rate_exchange_order($new->price,$booking->currency_unit)?></td>
 								 <?php if($booking->additional_person > 0){?>
 								<td align="center"><?php echo @$new->additional_person; ?> &times; <?php echo rate_exchange_order(@$new->additional_person_price,@$booking->currency_unit); ?> = <?php echo @$order->cs?>	<?php echo @$new->additional_person * rate_exchange_order(@$new->additional_person_price,@$order->currency_unit)?></td>

@@ -15,6 +15,8 @@ $settings	=	get_setting();
 function date_convert($str){
 $CI = get_instance();
 $settings	=	get_setting();
+//print_r($settings);
+//print_r($str);
 return $str = date("".$settings->date_format."",strtotime($str));
 
 
