@@ -121,7 +121,7 @@ $(function() {
 	$('.datepicker1').datepicker({
       	todayHighlight: true,
 		autoclose: true,
-	   format: 'dd-mm-yyyy',
+	   format: 'yyyy-mm-dd',
 	   startDate: new Date(),
 	 // endDate : new Date('2014-08-08'),
     }).on('changeDate', function (selected) {
@@ -131,7 +131,7 @@ $(function() {
 	$('.datepicker2').datepicker({
       	todayHighlight: true,
 		autoclose: true,
-	   format: 'dd-mm-yyyy',
+	   format: 'yyyy-mm-dd',
 	   startDate: new Date(),
     }).on('changeDate', function (selected) {
    		var date1	= $(".datepicker1").datepicker('getDate');
